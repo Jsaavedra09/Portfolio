@@ -47,7 +47,7 @@ body  {
     color: #007278;
 }
 
-.home {
+.inicio {
     height: auto;
     display: flex;
     align-items: center;
@@ -56,7 +56,7 @@ body  {
     width: 100%;
 }
 
-.home-content {
+.contenido-inicio {
     width: 100%;
     padding: 20px;
     background: transparent;
@@ -64,30 +64,32 @@ body  {
     border-radius: 8vh;
 }
 
-.home-content h1 {
+.contenido-inicio h1 {
     font-size: 7vh;
     font-weight: 700;
     line-height: 1.2;
 }
 
-.home-content h3 {
+.contenido-inicio h3 {
     font-size: 5vh;
     font-weight: 700;
     color: #007278;
 }
 
-.home-content p {
+.contenido-inicio p {
     font-size: 3.5vh;
     margin: 5vh;
     text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.home-content .boton {
+.contenido-inicio .boton-inicio {
     width: 16vh;
     height: 6vh;
 }
 
-.boton a {
+.boton-inicio a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -106,16 +108,16 @@ body  {
     transition: .5s;
 }
 
-.boton a:hover {
+.boton-inicio a:hover {
     color: #081b29;
     background-color: #007278;
 }
 
-.boton a:before{
+.boton-inicio a:before{
     transition: .5s;
 }
 
-.boton a:hover::before {
+.boton-inicio a:hover::before {
     width: 100%;
 }
 
@@ -164,11 +166,16 @@ body  {
     width: 100%;
 }
 
+.fotoinicio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .fotoJuan {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: center;
+    display: flex;
     justify-content: space-around;
     border-radius: 90%;
     width: 35vh;
@@ -187,3 +194,4 @@ body  {
     color: #007278;
     font-size: 300;
 }
+

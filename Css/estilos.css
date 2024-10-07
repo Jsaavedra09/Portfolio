@@ -1,0 +1,218 @@
+/* Css General*/ 
+
+*     {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body  {
+    background: #081b29;
+    color: #ededed;
+    height: auto;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 5vh;
+    color: #ededed;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 3vh;
+    color: #ededed;
+    font-weight: 500;
+    margin-left: 3vh;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #007278;
+}
+
+.iconos {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+}
+
+.iconos a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 0.4vh solid #007278;
+    border-radius: 50%;
+    font-size: 5vh;
+    color: #007278;
+    text-decoration: none;
+    z-index: 1;
+    transition: .5s;
+    overflow: hidden;
+    width: 6vh;
+}
+
+.iconos a:hover {
+    color: #081b29;
+}
+
+.iconos a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    overflow: hidden;
+    background: #007278;
+}
+
+.iconos a:hover::before {
+    width: 100%;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5vh 10%;
+    background: transparent;
+    color: #007278;
+    display:  inline-flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 2.5vh;
+    color:#007278;
+    align-content: center;
+}
+
+
+/* Css Inicio */
+
+.main-inicio {
+    height: 100%;
+    display: flex;
+    padding: 0 10%;
+    margin-top: 16vh;
+    width: 100%;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    max-width: 140vh;
+}
+
+.contenido-inicio {
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    margin: 7vh;
+    border-radius: 8vh;
+}
+
+.contenido-inicio h1 {
+    font-size: 7vh;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.contenido-inicio h3 {
+    font-size: 5vh;
+    font-weight: 700;
+    color: #007278;
+}
+
+.contenido-inicio p {
+    font-size: 3.5vh;
+    margin: 5vh;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenido-inicio .boton-inicio {
+    width: 16vh;
+    height: 6vh;
+}
+
+.boton-inicio a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background: transparent;
+    border: 0.4vh solid #007278;
+    border-radius: 0.8vh;
+    font-size: 90%;
+    color: #007278;
+    font-weight: 600;
+    letter-spacing: 0.1vh;
+    overflow: hidden;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.boton-inicio a:hover {
+    color: #081b29;
+    background-color: #007278;
+}
+
+.boton-inicio a:before{
+    transition: .5s;
+}
+
+.boton-inicio a:hover::before {
+    width: 100%;
+}
+
+.fotoJuan {
+    width: 36vh;
+    border-radius: 90%;
+}
+
+@media (max-width:720px) {
+
+    .main-inicio {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-inicio {
+        width: 85%;
+        justify-content: center;
+    }
+
+    .fotoJuan {
+        border-radius: 30%;
+        margin-bottom: 30px;
+    }
+
+}
