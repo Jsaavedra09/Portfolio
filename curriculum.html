@@ -3,98 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="Css/estilocv.css">
+    <title>Juan Saavedra</title>
+    <link rel="stylesheet" href="Css/estilos.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
         <a href="index.html" class="logo">JuanSaa.</a>
-            <nav class="navbar">
-                <a href="index.html">Inicio</a>
-                <a href="Sobremí.html">Sobre Mi</a>
-                <a href="curriculum.html" class="active">Curriculum</a>
-                <a href="Portafolio.html">Portafolio</a>
-                <a href="contacto1.html">Contacto</a>
-            </nav>
+        <button id="abrir" class="abrir-menu"><i class='bx bx-menu'></i></button>    
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class='bx bx-x'></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html" >Inicio</a></li>
+                <li><a href="Sobremí.html">Sobre Mi</a></li>
+                <li><a href="curriculum.html" class="active">Curriculum</a></li>
+                <li><a href="Portafolio.html">Portafolio</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <div class="home">
-        <div class="home-content">
-
-            <section class="section">
+    <main class="main-cv">
+        <section class="block-experiencia">
+            <div class="cuadrado-titulo">
+                <div class="titulo-experiencia">
                 <h2>Perfil Profesional</h2>
-                <p>Soy un joven que busca mejorar en el mundo IT, para poder desempeñarme en mi soñada carrera como ingeniero de software, he trabajado mas que nada en el rubro gastronomico sobre todo en el despacho de bebidas</p>
-            </section>
-
-            <section class="section">
-                <h2>Experiencia Laboral</h2>
-                <ul>
-                    <li>
+                <p>Soy un joven entusiasta con un profundo deseo de crecer y desarrollarme en el fascinante mundo de la tecnología de la información. Mi meta es convertirme en un ingeniero de software, una carrera que me apasiona y que considero fundamental en la era digital actual. 
+                    Aunque mi experiencia laboral hasta ahora ha estado principalmente en el sector gastronómico, específicamente en el área de despacho de bebidas, he aprendido valiosas habilidades como el trabajo en equipo y la atención al cliente. Estoy comprometido a adquirir nuevos conocimientos y habilidades en programación 
+                    y desarrollo de software, con la esperanza de contribuir de manera significativa a proyectos innovadores en el futuro.</p>
+                </div>
+            </div>
+            <div class="contenido-experiencia">
+                <div class="cuadrado-experiencia">
+                    <div class="experiencia">
                         <h3>Barista - Margen del mundo</h3>
                         <p> Actualmente </p>
-                        <p>Despacho de Café y atencion al publico</p>
-                    </li>
-                        <div class="foto1">
-                            <img src="img/Foto cafe1.jpeg" alt="Fotocafe" class="fotocafe">
-                        </div>
-                    <li>
+                        <p> Despacho de Café y atencion al publico</p>
+                        <img src="img/Foto cafe.jpeg" alt="Fotocafe">
+                    </div>
+                </div>
+                <div class="cuadrado-experiencia">
+                    <div class="experiencia">
                         <h3>Bartender - Rabia Bar</h3>
-                        <p>2023 - 2024</p>
-                        <p>Despacho y elaboracion de bebidas con y sin alcochol</p>
-                    </li>
-                        <div class="foto2">
-                            <img src="img/Foto Bar.jpeg" alt="Fotobar" class="fotobar">
-                        </div> 
-                </ul>
-            </section>
-
-            <section class="section">
-                <h2>Educación</h2>
-                <ul>
-                    <li>
-                        <h3>Tecnicatura Desarrollo de Software - Uade</h3>
-                        <p>En Curso</p>
-                    </li>
-                    <li>
-                        <h3>Secundario - Miguel Angel Martin</h3>
-                        <p>2016 - 2021</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <h2>Habilidades</h2>
-                <ul>
-                    <li>Html: Basico</li>
-                    <li>Css: Basico</li>
-                    <li>Python: Basico</li>
-                    <li>Excel: Basico</li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <h2>Idiomas</h2>
-                <ul>
-                    <li>Español - Nativo</li>
-                    <li>Ingles - Basico</li>
-                </ul>
-            </section>
-
-            <section class="botoncito">
-                <div class="boton">
-                    <a href="Cv Juan Saavedra.pdf" download="CvJuanSaavedra.pdf">DescargarCvJuan!</a> 
+                        <p>2023 - 2024 </p>
+                        <p> Despacho y elaboracion de bebidas con y sin alcochol</p>
+                        <img src="img/Foto Bar.jpeg" alt="Fotobar">
+                    </div>
+                </div>
+            </div>
+            <div class="botoncito">
+                <div class="boton-cv">
+                    <a href="CVJuanSaavedra.pdf" download="CvJuanSaavedra.pdf">DescargarCvJuan!</a> 
                 </div>               
-            </section>
-        </div>
-    </div>
+            </div>
+        </section>
+        <section class="block-educacion">
+            <h2>Educación</h2>
+            <div class="contenido-educacion">
+                <div class="cuadrado-educacion">
+                    <div class="educacion">
+                        <h3>Medicina - UBA</h3>
+                        <p>2022 - 2023</p>
+                        <img src="img/LogoUba1.jpeg" alt="logouba">
+                    </div>
+                </div>
+                <div class="cuadrado-educacion">
+                    <div class="educacion">    
+                        <h3>Tecnicatura Desarrollo de Software</h3>
+                        <p>2024 - En Curso</p>
+                        <img src="img/LogoUade.png" alt="LogoUade">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-skills">
+            <h2>Skills</h2>
+            <div class="contenido-skills">
+                <div class="cuadrado-skill">
+                    <div class="skill">
+                        <h3>Html</h3>
+                        <img src="img/Html.png" alt="Html">
+                    </div>
+                </div>
+                <div class="cuadrado-skill">
+                    <div class="skill">
+                        <h3>Css</h3>
+                        <img src="img/Css.png" alt="Css">
+                    </div>
+                </div>
+                <div class="cuadrado-skill">
+                    <div class="skill">
+                        <h3>JavaScript</h3>
+                        <img src="img/JavaScript.png" alt="JavaScript">
+                    </div>
+                </div>
+                <div class="cuadrado-skill">
+                    <div class="skill">
+                        <h3>Python</h3>
+                        <img src="img/python.png" alt="Python">
+                    </div>
+                </div>
+                <div class="cuadrado-skill">
+                    <div class="skill">
+                        <h3>Figma</h3>
+                        <img src="img/figma.png" alt="Figma">
+                    </div>
+                </div>
+                <div class="cuadrado-skill">
+                    <div class="skill">
+                        <h3>Paquete Office</h3>
+                        <img src="img/Office.png" alt="Office">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
     <footer class="footer">
         <div class="iconos">
             <a href="https://www.linkedin.com/in/juan-manuel-saavedra-acosta-860082265"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/Jsaavedra09"><i class='bx bxl-github'></i></a>
             <a href="https://www.instagram.com/juansaavedraa._?igsh=N2FhMXY5dGF3czVq"><i class='bx bxl-instagram' ></i></a>
         </div>
-            <p>@JuanSaavedra/Todos los Derechos reservados</p>
+            <p>@JuanSaavedra <br> Todos los Derechos reservados</p>
     </footer>
     <script src="js/script.js"></script>
 </body>

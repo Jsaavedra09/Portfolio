@@ -7,9 +7,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #007278;
+    --text-color: #fff;
+    --negrito-color: #0e0c0cfd;
+}
+
+span {
+    color: var(--second-bg-color);
+}
+
 body  {
-    background: #081b29;
-    color: #ededed;
+    background: var(--bg-color);
+    color: var(--text-color);
     height: auto;
 }
 
@@ -22,12 +33,11 @@ body  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
 }
 
 .logo {
-    font-size: 5vh;
-    color: #ededed;
+    font-size: 2.2rem;
+    color: var(--text-color);
     font-weight: 600;
     text-decoration: none;
     cursor: default;
@@ -41,7 +51,7 @@ body  {
 
 .nav a {
     font-size: 20px;
-    color: #ededed;
+    color: var(--text-color);
     font-weight: 500;
     transition: .3s;
     text-decoration: none;
@@ -49,11 +59,11 @@ body  {
 
 .nav a:hover,
 .nav a.active {
-    color: #007278;
+    color: var(--second-bg-color);
 }
 
 .abrir-menu {
-    color: #ededed;
+    color: var(--text-color);
 }
 
 .abrir-menu,
@@ -73,10 +83,10 @@ body  {
     justify-content: center;
     align-items: center;
     background: transparent;
-    border: 0.4vh solid #007278;
+    border: 0.4vh solid var(--second-bg-color);
     border-radius: 50%;
     font-size: 5vh;
-    color: #007278;
+    color: var(--second-bg-color);
     text-decoration: none;
     z-index: 1;
     transition: .5s;
@@ -85,7 +95,7 @@ body  {
 }
 
 .iconos a:hover {
-    color: #081b29;
+    color: var(--bg-color);
 }
 
 .iconos a::before {
@@ -98,7 +108,7 @@ body  {
     z-index: -1;
     transition: .5s;
     overflow: hidden;
-    background: #007278;
+    background: var(--second-bg-color);
 }
 
 .iconos a:hover::before {
@@ -112,7 +122,7 @@ body  {
     width: 100%;
     padding: 1.5vh 10%;
     background: transparent;
-    color: #007278;
+    color: var(--second-bg-color);
     display:  inline-flex;
     justify-content: space-between;
     margin-top: 10vh;
@@ -120,7 +130,7 @@ body  {
 
 .footer p {
     font-size: 2.5vh;
-    color:#007278;
+    color:var(--second-bg-color);
     align-content: center;
 }
 
@@ -214,7 +224,7 @@ body  {
 .contenido-inicio h3 {
     font-size: 5vh;
     font-weight: 700;
-    color: #007278;
+    color: var(--second-bg-color);
 }
 
 .contenido-inicio p {
@@ -237,10 +247,10 @@ body  {
     width: 100%;
     height: 8vh;
     background: transparent;
-    border: 0.4vh solid #007278;
+    border: 0.4vh solid var(--second-bg-color);
     border-radius: 0.8vh;
     font-size: 90%;
-    color: #007278;
+    color: var(--second-bg-color);
     font-weight: 600;
     letter-spacing: 0.1vh;
     overflow: hidden;
@@ -249,8 +259,8 @@ body  {
 }
 
 .boton-inicio a:hover {
-    color: #081b29;
-    background-color: #007278;
+    color: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 
 .boton-inicio a:before{
@@ -311,4 +321,397 @@ body  {
     .contenido-inicio .boton-inicio {
         width: 40%;
     }
+}
+
+/* Css Sobre Mi*/
+
+.main-sobremi {
+    height: auto;
+    display: flex;
+    padding: 0 10%;
+    margin-top: 16vh;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-sobremi h1 {
+    font-size: 7vh;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.contenido-sobremi {
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenido-sobremi h3 {
+    font-size: 5vh;
+    font-weight: 700;
+    color: var(--second-bg-color);
+}
+
+.contenido-sobremi a {
+    text-decoration: none;
+    color: var(--second-bg-color);
+}
+
+.contenido-sobremi p {
+    font-size: 3.5vh;
+    margin: 20px 0 40px;
+    text-decoration: none;
+}
+
+.fotobola {
+    border-radius: 90%;
+    width: 15rem;
+    display: flex;
+}
+
+.fotobolita {
+    display: flex;
+}
+
+@media (max-width:450px) {
+    .fotobola {
+        width: 10rem;
+    }
+
+    .contenido-sobremi {
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Css Curriculum */
+
+.main-cv {
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-experiencia {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 2rem;
+    margin: 30px;
+}
+
+.cuadrado-titulo {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.titulo-experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-experiencia h2 {
+    font-size: 30px; 
+    text-align: center;
+    color: var(--second-bg-color);
+    margin: 10px;
+}
+
+.titulo-experiencia p {
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    margin: 10px;
+    max-width: 80%;
+}
+
+.contenido-experiencia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.cuadrado-experiencia {
+    background-color: var(--negrito-color);
+    border: 3px solid var(--second-bg-color);
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+.cuadrado-experiencia:hover {
+    box-shadow: 0 0 20px var(--second-bg-color);
+}
+
+.experiencia {
+    text-align: center;
+    margin: 40px;
+}
+
+.experiencia h3 {
+    color: var(--second-bg-color);
+    font-size: 25px;
+}
+
+.experiencia p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.experiencia img {
+    width: 15rem;
+    border-radius: 90%;
+}
+
+.block-educacion {
+    width: 90%;
+    margin: 30px;
+}
+
+.block-educacion h2{
+    font-size: 30px; 
+    text-align: center;
+    color: var(--second-bg-color);
+    margin-bottom: 20px;
+}
+
+.contenido-educacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cuadrado-educacion {
+    background-color: var(--negrito-color);
+    width: 30%;
+    border-radius: 20%;
+    margin: 20px;
+    border: 3px solid var(--second-bg-color);
+}
+
+.cuadrado-educacion:hover {
+    box-shadow: 0 0 20px var(--second-bg-color);
+}
+
+.educacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.educacion h3 {
+    font-size: 18px; 
+    color: var(--second-bg-color);
+    margin: 20px;
+}
+
+.educacion p {
+    margin: 10px;
+}
+
+.educacion img {
+    width: 6rem;
+    margin: 20px;
+}
+
+.block-skills {
+    width: 80%;
+    margin: 30px;
+}
+
+.block-skills h2{
+    font-size: 30px; 
+    text-align: center;
+    color: var(--second-bg-color);
+    margin-bottom: 20px;
+}
+
+.contenido-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin: 20px;
+}
+
+.cuadrado-skill {
+    border: 3px solid var(--second-bg-color);
+    background-color: var(--negrito-color);
+    width: 30%;
+    border-radius: 20%;
+}
+
+.cuadrado-skill:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px var(--second-bg-color);
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.skill h3 {
+    color: var(--second-bg-color);
+    font-size: 20px;
+    margin: 10px;
+}
+
+.skill img {
+    width: 6rem;
+    height: 6rem;
+    margin: 10px;
+}
+
+.botoncito {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-cv {
+    width: 40%;
+    align-items: center;
+    justify-items: center;
+}
+
+.boton-cv a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh ;
+    background: transparent;
+    border: 0.4vh solid var(--second-bg-color);
+    border-radius: 0.8vh;
+    font-size: 3vh;
+    color: var(--second-bg-color);
+    font-weight: 600;
+    letter-spacing: 0.1vh;
+    overflow: hidden;
+    text-decoration: none;
+    transition: .5s;
+    align-content: center;
+}
+
+.boton-cv a:hover {
+    color: var(--bg-color);
+    background-color: var(--second-bg-color);
+    box-shadow: 0 0 20px var(--second-bg-color);
+}
+
+.boton-cv a:before {
+    transition: .5s;
+}
+
+.boton-cv a:hover::before {
+    width: 100%;
+}
+
+
+@media (max-width:720px) {
+    .titulo-experiencia h2 {
+        font-size: 25px;
+    }
+
+    .titulo-experiencia p {
+        font-size: 15px;
+    }
+    .contenido-experiencia {
+        margin: 10px;
+    }
+
+    .cuadrado-experiencia {
+        width: 45%;
+    }
+
+    .experiencia {
+        margin: 20px;
+    }
+
+    .experiencia p {
+        font-size: 15px;
+    }
+
+    .experiencia img {
+        width: 10rem;
+    }
+
+    .cuadrado-educacion {
+        width: 45%;
+    }
+
+    .educacion {
+        margin: 10px;
+    }
+
+    .cuadrado-skill {
+        width: 40%;
+    }
+
+}
+
+@media (max-width:450px) {
+    .titulo-experiencia h2 {
+        font-size: 20px;
+    }
+
+    .titulo-experiencia p {
+        font-size: 12px;
+        letter-spacing: 0.1px;
+    }
+    .contenido-experiencia {
+        margin: 15px;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .cuadrado-experiencia {
+        width: 70%;
+    }
+
+    .experiencia {
+        margin: 20px;
+    }
+
+    .experiencia p {
+        font-size: 15px;
+    }
+
+    .experiencia img {
+        width: 10rem;
+    }
+
+    .boton-cv {
+        width: 60%;
+    }
+
+    .contenido-educacion {
+        flex-wrap: wrap;
+    }
+
+    .cuadrado-educacion {
+        width: 60%;
+    }
+
+    .cuadrado-skill {
+        width: 50%;
+    }
+
 }

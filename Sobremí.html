@@ -3,41 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mí</title>
-    <link rel="stylesheet" href="Css/estilosobremi.css">
+    <title>Juan Saavedra</title>
+    <link rel="stylesheet" href="Css/estilos.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
         <a href="index.html" class="logo">JuanSaa.</a>
-        
-        <nav class="navbar">
-            <a href="index.html">Inicio</a>
-            <a href="Sobremí.html" class="active">Sobre Mi</a>
-            <a href="curriculum.html">Curriculum</a>
-            <a href="Portafolio.html">Portafolio</a>
-            <a href="contacto1.html">Contacto</a>
+        <button id="abrir" class="abrir-menu"><i class='bx bx-menu'></i></button>    
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class='bx bx-x'></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Sobremí.html" class="active">Sobre Mi</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="Portafolio.html">Portafolio</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
-    <main class="home">
-        <section class="home-content">
-    <h1>Sobre mí</h1>
-    <p>¡Hola! me llamo Juan Manuel Saavedra Acosta :D, nací el 25 de septiembre de 2004 en Villavicencio, Colombia, desde el 2022 vivo en Argentina. Actualmente trabajo en <a href="https://www.instagram.com/margennunez/">Margen del mundo</a> como barista.</p>
-    <p>Me apasiona el deporte, la conexión con la naturaleza y todas las expresiones artisticas, en especial la musica.</p>            
-    <p>Desde pequeño, he sentido una gran fascinación por la tecnología y la electrónica. Soy una persona curiosa que disfruta aprender cosas nuevas y adaptarse a diversas situaciones en la vida.</p >
-    </section>
-        <div class="fotobolita"></div>
-            <img class="fotobola" src="img/Foto Bola nieve.jpg" alt="Foto nieve" width="300px"> 
-        </div>
-    </main>
-        
+    <main class="main-sobremi">
+        <h1>Sobre mí</h1>
+        <section class="contenido-sobremi">
+            <p>¡Hola! me llamo Juan Manuel Saavedra Acosta :D, nací el 25 de septiembre de 2004 en Villavicencio, Colombia, desde el 2022 vivo en Argentina. <br> Actualmente trabajo en <a href="https://www.instagram.com/margennunez/">Margen del mundo</a> como barista.</p>
+            <p>Desde pequeño, he sentido una gran fascinación por la tecnología y la electrónica. Soy una persona curiosa que disfruta aprender cosas nuevas y adaptarse a diversas situaciones en la vida.</p >
+            <p>Actualmente estoy cursando la Tecnicatura en Desarrollo de Software en la <span>UADE</span>, con mucho entusiasmo por comenzar a trabajar en un área que siempre me ha interesado.</p>
+            <p>Me apasiona el deporte, la conexión con la naturaleza y todas las expresiones artisticas, en especial la musica.</p>
+            <div class="fotobolita">
+                <img class="fotobola" src="img/Foto Bola nieve.jpg" alt="Foto nieve"> 
+            </div>
+        </section>
+    </main>     
     <footer class="footer">
             <div class="iconos">
             <a href="https://www.linkedin.com/in/juan-manuel-saavedra-acosta-860082265"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/Jsaavedra09"><i class='bx bxl-github'></i></a>
             <a href="https://www.instagram.com/juansaavedraa._?igsh=N2FhMXY5dGF3czVq"><i class='bx bxl-instagram' ></i></a>
         </div>
-            <p>@JuanSaavedra/Todos los Derechos reservados</p>
+            <p>@JuanSaavedra <br> Todos los Derechos reservados</p>
     </footer>
     <script src="js/script.js"></script>
 </body>
