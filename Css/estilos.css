@@ -405,6 +405,7 @@ body  {
     padding: 15px;
     margin: 10px;
     text-align: center;
+    border-radius: 15px;
 }
 
 .fotobola {
@@ -495,6 +496,7 @@ body  {
     display: flex;
     width: 40%;
     justify-content: center;
+    border-radius: 20px;
 }
 
 .cuadrado-experiencia:hover {
@@ -542,7 +544,7 @@ body  {
 .cuadrado-educacion {
     background-color: var(--negrito-color);
     width: 30%;
-    border-radius: 20%;
+    border-radius: 20px;
     margin: 20px;
     border: 3px solid var(--second-bg-color);
 }
@@ -597,7 +599,7 @@ body  {
     border: 3px solid var(--second-bg-color);
     background-color: var(--negrito-color);
     width: 30%;
-    border-radius: 20%;
+    border-radius: 20px;
     transition: 0.5s ease;
 }
 
@@ -677,7 +679,7 @@ body  {
     }
 
     .titulo-experiencia p {
-        font-size: 15px;
+        font-size: 18px;
     }
     .contenido-experiencia {
         margin: 10px;
@@ -719,7 +721,7 @@ body  {
     }
 
     .titulo-experiencia p {
-        font-size: 12px;
+        font-size: 17px;
         letter-spacing: 0.1px;
     }
     .contenido-experiencia {
@@ -817,7 +819,7 @@ body  {
     background-color: var(--negrito-color);
     border: 3px solid var(--second-bg-color);
     margin: 15px;
-    border-radius: 20%;
+    border-radius: 20px;
 }
 
 .cuadrado-proyecto:hover {
@@ -861,7 +863,7 @@ body  {
     }
 
     .block-titulo p {
-        font-size: 13px;
+        font-size: 18px;
         margin: 10px;
     }
    

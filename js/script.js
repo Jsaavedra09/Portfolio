@@ -31,7 +31,7 @@ function toTop() {
 
 // Determina la distancia que bajaste para mostrar o no el boton para subir
 function scrollFunction() {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
         btntoTop.style.display = "block";
     } else {
         btntoTop.style.display = "none";
