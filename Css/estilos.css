@@ -212,7 +212,7 @@ body  {
 
     .iconos {
         justify-content: space-evenly;
-        width: 35%;
+        width: 50%;
     }
 }
 
@@ -675,11 +675,11 @@ body  {
 
 @media (max-width:720px) {
     .titulo-experiencia h2 {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .titulo-experiencia p {
-        font-size: 18px;
+        font-size: 25px;
     }
     .contenido-experiencia {
         margin: 10px;
@@ -694,7 +694,7 @@ body  {
     }
 
     .experiencia p {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .experiencia img {
@@ -717,12 +717,11 @@ body  {
 
 @media (max-width:450px) {
     .titulo-experiencia h2 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .titulo-experiencia p {
-        font-size: 17px;
-        letter-spacing: 0.1px;
+        font-size: 25px;
     }
     .contenido-experiencia {
         margin: 15px;
@@ -736,10 +735,6 @@ body  {
 
     .experiencia {
         margin: 20px;
-    }
-
-    .experiencia p {
-        font-size: 15px;
     }
 
     .experiencia img {
@@ -784,13 +779,13 @@ body  {
 }
 
 .block-titulo h1 {
-    font-size: 30px;
+    font-size: 45px;
     color: var(--second-bg-color);
     margin: 10px;
 }
 
 .block-titulo p {
-    font-size: 20px;
+    font-size: 28px;
     letter-spacing: 0.1px; 
     gap: 0.5rem;
 }
@@ -859,11 +854,11 @@ body  {
 @media (max-width:450px) {
    
     .block-titulo h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .block-titulo p {
-        font-size: 18px;
+        font-size: 25px;
         margin: 10px;
     }
    
@@ -872,6 +867,10 @@ body  {
     }
 
     .proyecto h2 {
+        font-size: 25px;
+    }
+
+    .proyecto p {
         font-size: 20px;
     }
 
@@ -946,4 +945,12 @@ body  {
     color: #081b29;
 }
 
+@media (max-width: 450px) {
+    .contacto {
+        width: 80%;
+    }
 
+    .form-group input, textarea{
+        font-size: 20px;
+    }
+}
