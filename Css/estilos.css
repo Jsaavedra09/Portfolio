@@ -505,6 +505,7 @@ body  {
 }
 
 .cuadrado-experiencia:hover {
+    transform: scale(1.15);
     box-shadow: 0 0 20px var(--second-bg-color);
 }
 
@@ -555,6 +556,7 @@ body  {
 }
 
 .cuadrado-educacion:hover {
+    transform: scale(1.15);
     box-shadow: 0 0 20px var(--second-bg-color);
 }
 
