@@ -148,7 +148,7 @@ body  {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 1.5vh 10%;
+    padding: 1rem 5%;
     background: transparent;
     color: var(--second-bg-color);
     display:  inline-flex;
@@ -349,6 +349,10 @@ body  {
     .contenido-inicio .boton-inicio {
         width: 40%;
     }
+
+    .main-inicio {
+        padding: 0;
+    }
 }
 
 /* Css Sobre Mi*/
@@ -406,6 +410,7 @@ body  {
     margin: 10px;
     text-align: center;
     border-radius: 15px;
+    align-items: center;
 }
 
 .fotobola {
@@ -431,7 +436,7 @@ body  {
     }
 
     .cuadrado-sobremi {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -561,13 +566,14 @@ body  {
 }
 
 .educacion h3 {
-    font-size: 18px; 
+    font-size: 20px; 
     color: var(--second-bg-color);
     margin: 20px;
 }
 
 .educacion p {
     margin: 10px;
+    font-size: 18px;
 }
 
 .educacion img {
@@ -601,6 +607,7 @@ body  {
     width: 30%;
     border-radius: 20px;
     transition: 0.5s ease;
+    text-align: center;
 }
 
 .cuadrado-skill:hover {
@@ -730,7 +737,7 @@ body  {
     }
 
     .cuadrado-experiencia {
-        width: 70%;
+        width: 85%;
     }
 
     .experiencia {
@@ -742,7 +749,7 @@ body  {
     }
 
     .boton-cv {
-        width: 60%;
+        width: 75%;
     }
 
     .contenido-educacion {
@@ -754,7 +761,7 @@ body  {
     }
 
     .cuadrado-skill {
-        width: 50%;
+        width: 80%;
     }
 
 }
@@ -867,15 +874,15 @@ body  {
     }
 
     .proyecto h2 {
-        font-size: 25px;
+        font-size: 27px;
     }
 
     .proyecto p {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .proyecto img {
-        width: 7rem;
+        width: 10rem;
         height: auto;
     }
 } 
