@@ -29,7 +29,7 @@ function toTop() {
     window.scrollTo(0, 0);
 }
 
-// Determina la distancia que bajaste para mostrar o no el boton para subir
+/* Determina la distancia para mostrar o no el boton para subir */
 function scrollFunction() {
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
         btntoTop.style.display = "block";

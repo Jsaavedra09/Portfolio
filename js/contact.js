@@ -1,12 +1,12 @@
 /* Js Contacto*/ 
 
 function validarFormulario() {
-    /* Obtener los valores de los campos */
+    /* Obtiene los valores de los campos */
     const nombre = document.getElementById("nombre").value.trim();
     const correo = document.getElementById("correo").value.trim();
     const mensaje = document.getElementById("mensaje").value.trim();
     
-    /* Expresión regular para validar el correo electrónico */
+    /* Valida el correo electrónico */
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     /* Validación de campos vacíos */
