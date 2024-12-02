@@ -502,6 +502,7 @@ body  {
     width: 40%;
     justify-content: center;
     border-radius: 20px;
+    transition: 0.5s ease;
 }
 
 .cuadrado-experiencia:hover {
@@ -553,6 +554,7 @@ body  {
     border-radius: 20px;
     margin: 20px;
     border: 3px solid var(--second-bg-color);
+    transition: 0.5s ease;
 }
 
 .cuadrado-educacion:hover {
